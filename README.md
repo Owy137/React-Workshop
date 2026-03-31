@@ -4,4 +4,5 @@
 3. Enter a directory you would like to start the project in, and using terminal, input "npm init vite #PROJECT-NAME#" to initialize the project
 4. For the initialization, when prompted to select a framework, select React (React is actually a library)
 5. Select JavaScript for the variant and Yes to Install with npm if prompted
-6. 
+6. Npm may have started the webpage for you, you can check by going to "localhost:5173"
+7. If it has not, or you wish to run the server after shutting it off, enter "npm run dev" into the terminal, ensure that you are in the directory of the project you created
