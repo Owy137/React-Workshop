@@ -1,12 +1,21 @@
-//import styles from './Button.module.css'
+import { memo } from 'react'
+import './index.css'
 
-export default function Button(value, equation, setEquation){
-
-    console.log(equation);
+function Button({ value, onClick }) {
+    const className = value === 'C'
+        ? 'clear-button'
+        : value === '='
+            ? 'equal-button'
+            : ''
 
     return (
-        <button onClick={() => setEquation([...equation, value])}>
+        <button
+            className={className}
+            onClick={() => onClick(value)}
+        >
             { value }
         </button>
     )
 }
+
+export default memo(Button)

@@ -109,3 +109,62 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+  margin: 24px auto;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.screen {
+  grid-column: 1 / -1;
+  min-height: 80px;
+  width: 90%;
+  padding: 18px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 14px;
+  background: #f4f4f8;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.screen-text {
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  text-align: right;
+  word-wrap: break-word;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.App button {
+  width: 100%;
+  padding: 18px 0;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.clear-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.equal-button {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.App p {
+  display: none;
+}
