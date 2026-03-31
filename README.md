@@ -6,3 +6,8 @@
 5. Select JavaScript for the variant and Yes to Install with npm if prompted
 6. Npm may have started the webpage for you, you can check by going to "localhost:5173"
 7. If it has not, or you wish to run the server after shutting it off, enter "npm run dev" into the terminal, ensure that you are in the directory of the project you created
+
+# Downloading Workshop
+1. Git clone the repository into directory of choosing
+2. Before running, "npm install" may need to be ran to install neccessary dependencies
+3. Once dependencies are installed, run server with "npm run dev"
